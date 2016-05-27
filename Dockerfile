@@ -1,12 +1,11 @@
-FROM fedora
-#FROM registry.access.redhat.com/rhel7.1
-#CHANGE
+#FROM fedora
+FROM registry.access.redhat.com/rhel7.1
 
 
-RUN dnf -y update && dnf clean all
+RUN yum -y update && yum clean all
 
-RUN dnf install -y wget telnet findutils zip tar unzip mlocate
-RUN dnf -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+RUN yum install -y wget telnet findutils zip tar unzip mlocate
+RUN yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
 
 RUN mkdir /opt/rh
 
