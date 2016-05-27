@@ -1,4 +1,4 @@
-FROM rhel7:latest
+FROM  registry.access.redhat.com/rhel7.1
 
 
 RUN dnf -y update && dnf clean all
