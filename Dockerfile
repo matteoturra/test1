@@ -1,4 +1,6 @@
-FROM  registry.access.redhat.com/rhel7.1
+FROM fedora
+#FROM registry.access.redhat.com/rhel7.1
+#CHANGE
 
 
 RUN dnf -y update && dnf clean all
